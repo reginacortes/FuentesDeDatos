@@ -1,0 +1,387 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red227\green227\blue226;\red0\green0\blue0;
+\red227\green227\blue226;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c91181\c91180\c90953;\csgray\c0;
+\cssrgb\c91181\c91180\c90953;}
+\margl1440\margr1440\vieww13080\viewh8720\viewkind0
+\deftab720
+\pard\pardeftab720\qr\partightenfactor0
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Regina Cortes\
+206138\
+Mac \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 0 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Necesito conectarme al usuario bandit0 con la contrase\'f1a bandit0 usando ssh para poder leer el contenido del documento llamado readme que se encuentra dentro de ese usuario y en el cual esta la contrase\'f1a para poder conectarme a bandit1 \
+\
+2. \'bfQu\'e9 comando(s) creo que necesito? \
+Luego de conectarme, creo que necesito ls para ver los documentos dentro del usuario bandit0 y el comando cat que lee el contenido de los documentos y as\'ed poder leer la contrase\'f1a dentro del readme \
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n?\
+https://www.wikihow.com/Use-SSH\
+https://www.youtube.com/watch?v=WwGRGfLy6q8\
+https://www.youtube.com/watch?v=pLwAw504BHw\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 ssh bandit0@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 \
+   $ comando2 : password bandit0\
+   \outl0\strokewidth0 $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat read me
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 \
+   \outl0\strokewidth0 $ comando5 : exit\
+\outl0\strokewidth0 \strokec3 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?
+\fs24 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf2 Si me funcion\'f3, obtuve la contrase\'f1a, antes de usar cat pens\'e9 que podia usar cd para entrar al realme, pero me percate que solo funciona para moverse entre directorios. \
+Contrase\'f1a: 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 \
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs21 \cf2 \outl0\strokewidth0 === NIVEL 1 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Necesito conectarme a bandit1, siendo ese el usuario con la contrase\'f1a que adquir\'ed en el nivel anterior, y buscar la contrase\'f1a que se encuentra en el documento \'93-\'93\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que usar\'e9 ls y cat ./- para poder abrir el documento\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? (link o man page)\
+https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal#:~:text=Sorted%20by:,2%2C2011%2016%2037\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit1@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If\
+   
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 $ comando3 : ls\
+   $ comando4 : cat ./-\
+   $ comando5 : exit\
+\
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?
+\fs24 \
+Tuve que cerrar la terminal porque ejecute cd - y no entend\'ed que estaba pasando, y tuve que volver a empezar. Al volverlo a hacer obtuve la contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs21 \cf2 === NIVEL 2 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? (en tus palabras)\
+Conectarme a bandit2 con la contrase\'f1a que obtuve en el nivel anterior, y encontrar la contrase\'f1a para el siguiente nivel que se encuentra en el archivo \'97spaces in this filename\'97 \
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Al estar conectada creo que utilizare el comando ls y cat \'93\'97spaces in this file\'97\'93\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? (link o man page)\
+https://stackoverflow.com/questions/23019471/how-can-i-go-to-a-directory-whose-file-name-has-spaces-between-them-in-the-linux\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit2@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./--spaces in this filename--
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./--spaces in this filename--.txt
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat -- --spaces in this filename--.txt
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat "--spaces in this filename--"
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando8 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat --help\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando9 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat --spaces\\ in\\ this\\ filename-- \
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando10 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./--spaces\\ in\\ this\\ filename--\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando11 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+Si funciono, pero tuve que modificar varias veces la forma en la que ingresaba el nombre del archivo teniendo en cuenta que contiene espacios en el nombre, por lo que, por cada espacio se agregaba un \\ y al inicio ./, con eso pude obtener la contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 3 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? (en tus palabras)\
+Necesito conectarme a bandit3 con la contrase\'f1a que obtuve en el nivel anterior, y encontrar la contrase\'f1a para el proximo nivel que se encuentra en un documento escondido en el directorio llamado \'93inhere.\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que utilizar\'e9 ls, find, cd y cat\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? (link o man page)\
+https://www.interserver.net/tips/kb/find-manage-hidden-files-linux-guide/\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit3@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cd inhere
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls -a
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./.\\ \\ ..\\ \\ ...Hiding-From-You
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./.\\  ..\\  ...Hiding-From-You
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf2 Creo que si funcion\'f3 porque al usar \'91
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./.\\  ..\\  ...Hiding-From-You\'92 al inicio me dec\'eda que no exist\'eda dicho documento pero despu\'e9s despleg\'f3 lo que creo es la contrase\'f1a, y al final ya no tuve que usar find. 
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs21 \cf2 === NIVEL 4 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? (en tus palabras)\
+Necesito conectarme a bandit4 con la contrase\'f1a que obtuve en el nivel anterior, y encontrar la contrase\'f1a para el proximo nivel que se encuentra en el documento \'93only human-readable\'94 en el directorio \'93inhere\'94\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que necesitar\'e9 ls, cd\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? (link o man page)\
+https://serverfault.com/questions/124659/how-can-i-open-a-file-whose-name-starts-with#:~:text=goldPseudo,1\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit4@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cd inhere
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file00
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file01\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando8 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file02\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando9 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file03\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando10 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file04\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando11 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat ./-file07\
+   
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 $ comando12 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf2 Si funcion\'f3, tuve que ajustar como abr\'eda el contenido de los documentos debido a que empiezan con \'93-\'93, e ir abriendo uno por uno hasta encontrar algo parecido a lo que podr\'eda ser la siguiente contrase\'f1a que fue hasta el doc numero 7 \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+
+\fs21 \cf2 === NIVEL 5 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? (en tus palabras)\
+Necesito conectarme a bandit5 con la contrase\'f1a que obtuve en el nivel anterior, y encontrar la contrase\'f1a para el proximo nivel que esta en el directorio llamado \'93inhere\'94 que tiene las siguientes propiedades: human-readable, 1033 bytes de tama\'f1o y es no ejecutable\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que utilizar\'e9 ls, cd, ls -lah\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? (link o man page)\
+https://www.swhosting.com/es/blog/como-revisar-el-espacio-en-disco-en-linux-con-df-y-du#:~:text=El%20Comando%20du,en%20formato%20legible%20por%20humanos.\
+https://www.linode.com/docs/guides/ls-command-in-linux/\
+https://www.ionos.mx/digitalguide/servidores/configuracion/comando-linux-find/\
+\
+4. Comandos que ejecut\'e9:\
+   $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit5@bandit.labs.overthewire.org -p 2220
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cd inhere
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls -lah
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 du -h
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find . -size +1033\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando8 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls -a\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando9 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls -R\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando10 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ls -R -lh
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando11 : ls -R -lah
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+   
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 $ comando12 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find . -type f -size 1033c\
+
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando13 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cd maybehere07
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando14 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat .file2\
+   
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 $ comando15 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f0\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+ \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?
+\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf2 Si funciono, me tarde un poco en utilizar find porque pens\'e9 que podr\'eda encontrar el documento enlistando los archivos de cara subdirectorio pero no fue as\'ed, por lo que tuve que buscar como usar find y utilizar el tama\'f1o como b\'fasqueda \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 {{\NeXTGraphic Captura de pantalla 2026-01-27 a la(s) 5.14.22â€¯p.m..png \width22100 \height15640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+{{\NeXTGraphic Captura de pantalla 2026-01-27 a la(s) 5.14.12â€¯p.m..png \width22280 \height15640 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+}
