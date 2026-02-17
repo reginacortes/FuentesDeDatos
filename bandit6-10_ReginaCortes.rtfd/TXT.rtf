@@ -1,0 +1,308 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Monaco;\f1\fnil\fcharset0 Menlo-Regular;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red30\green40\blue49;\red0\green0\blue0;
+\red30\green40\blue49;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c15294\c20784\c25098;\csgray\c0;
+\cssrgb\c15294\c20784\c25098;}
+\margl1440\margr1440\vieww17680\viewh8620\viewkind0
+\deftab720
+\pard\pardeftab720\qr\partightenfactor0
+
+\f0\fs18 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 							Regina Cortes\
+206138\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 6 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Primero necesito entrar al nivel 6 con la contrase\'f1a 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG,
+\f0\fs20  
+\fs18 ya estando ahi, para pasar al siguiente nivel, necesito buscar el archivo que tenga de user bandit7, y de grupo bandit6 con 33 bytes de tama\'f1o. \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 \
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Considero que podr\'e9 utilizar ls, y find por grupo y user\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? \
+https://voragine.net/linux/bash-script-obtener-propietario-grupo-carpeta-archivo\
+https://www.ionos.mx/digitalguide/servidores/configuracion/comando-linux-find/\
+https://unix.stackexchange.com/questions/82515/how-can-i-filter-those-permission-denied-from-find-output\
+\
+4. Comandos que ejecut\'e9:\
+    
+\f2\fs21 \cf2 \outl0\strokewidth0 $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit6@bandit.labs.overthewire.org -p 2220
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find / -type f -user bandit7
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find / -type f -user bandit7 -group bandit6\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find / -type f -user bandit7 -group bandit6 -size 33c
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando8 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat /var/lib/dpkg/info/bandit7.password\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando9 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+
+\f0\fs18 \cf2 \outl0\strokewidth0 \strokec3 \
+\pard\pardeftab720\partightenfactor0
+\cf2 5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+Al final, si funciono, me costo un poco de trabajo porque fui modificando la forma en la que se filtraba la b\'fasqueda, incluso cuando estaba filtrando por grupo, user y tama\'f1o, segu\'edan habiendo muchos archivos con \'91permission denied\'92 Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+\f0\fs18 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \outl0\strokewidth0 \strokec3 \
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \outl0\strokewidth0 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 7 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Necesito conectarme al nivel 7 con la contrase\'f1a obtenida en el nivel anterior, donde tengo que buscar el archivo data.txt que est\'e1 al lado de la palabra millionth\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que utilizar\'e9 ls, find, y tendr\'e9 que investigar mas para ver como puedo ver un archivo al lado de una palabra\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? \
+https://ugeek.github.io/blog/post/2020-10-14-buscar-texto-en-un-directorio-archivo---con-grep-y-find.html\
+\
+4. Comandos que ejecut\'e9:\
+    
+\f2\fs21 $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit7@bandit.labs.overthewire.org -p 2220
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep "millionth" ~/data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs18 \cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+Si funciono, y pens\'e9 que con grep no iba a funcionar, que tendr\'eda que utilizar algo m\'e1s espec\'edfico pero se logr\'f3. \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+\f0\fs18 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 8 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Necesito conectarme al nivel 8 con la contrase\'f1a que se obtuvo en el nivel anterior, y encontrar la siguiente contrase\'f1a que se encuentra en el archivo que se llama data.txt y es la \'fanica linea que se repite solamente una vez en el archivo. \
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+creo que utilizar\'e9 ls, cd, find\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? \
+https://stackoverflow.com/questions/48065430/finding-a-line-that-shows-in-a-file-only-once\
+\
+4. Comandos que ejecut\'e9:\
+    
+\f2\fs21 $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit8@bandit.labs.overthewire.org -p 2220
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 sort data.txt | uniq -u
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs18 \cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+Si funcion\'f3, investigue como podr\'eda seleccionar la \'fanica linea en el archivo que no se repet\'eda \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+\f0\fs18 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 9 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+Necesito conectarme al nivel 9 con la contrase\'f1a que se obtuvo en el nivel anterior, y buscar la contrase\'f1a nueva que se encuentra en el archivo data.txt en uno de los strings que podemos interpretar y que procede con muchos caracteres =. \
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que necesitare ls, cd, cat, grep\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? \
+https://klient.netcloud24.com/knowledgebase/1516/Como-usar-grep-para-buscar-cadenas-de-texto-en-archivos-en-la-shell-de-Linux.html?currency=4&language=canada\
+https://labex.io/es/tutorials/linux-linux-strings-command-with-practical-examples-422934\
+\
+4. Comandos que ejecut\'e9:\
+    
+\f2\fs21 $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit9@bandit.labs.overthewire.org -p 2220
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : cat data.txt\
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep -r "="\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep '=' data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep -o "=" data.txt\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando8 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep = data.txt -c\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando9 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 grep = data.txt -w\
+
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1    $ comando10 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat data.txt | strings
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando11 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat data.txt | strings | grep '='\
+   
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 $ comando12 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs18 \cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+\pard\pardeftab720\partightenfactor0
+\cf2 Si funcion\'f3, pero me tard\'e9 un poco en encontrar que podia utilizar cat para desplegar \'fanicamente los strings que son legibles para el humano, y ya con eso pude utilizar grep para las palabras que ten\'edan el signo de igual =. \
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+\f0\fs18 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\
+\
+\
+\
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 === NIVEL 10 ===\
+\pard\pardeftab720\partightenfactor0
+\cf2 1. \'bfQu\'e9 necesito hacer? \
+La contrase\'f1a para el siguiente nivel se encuentra en archivo que contiene los datos de base64 codificados.\
+\
+2. \'bfQu\'e9 comando(s) creo que necesito?\
+Creo que utilizare ls, cd, cat\
+\
+3. \'bfD\'f3nde busqu\'e9 informaci\'f3n? \
+https://rm-rf.es/codificar-y-descodificar-base64-desde-bash/\
+\
+4. Comandos que ejecut\'e9:\
+    
+\f2\fs21 $ comando1 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 ssh bandit10@bandit.labs.overthewire.org -p 2220
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando2 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando3 : ls\
+   $ comando4 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 cat data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando5 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 base64 data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+   $ comando6 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 base64 -d data.txt
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+\cf2    $ comando7 : 
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 exit
+\f2\fs21 \cf2 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs18 \cf2 \
+5. \'bfFuncion\'f3? Si no, \'bfqu\'e9 ajust\'e9?\
+Fue f\'e1cil encontrar informaci\'f3n sobre como decodificar un archivo base64, entonces funciono bien.\
+Contrase\'f1a\uc0\u9825  
+\f1\fs22 \cf4 \kerning1\expnd0\expndtw0 \CocoaLigature0 dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr\
+\
+\pard\pardeftab720\partightenfactor0
+{{\NeXTGraphic Captura de pantalla 2026-02-16 a la(s) 7.49.42â€¯p.m..png \width20660 \height11920 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\
+}
